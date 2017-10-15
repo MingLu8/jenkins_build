@@ -1,10 +1,10 @@
 #!bin/bash
 set -e
-dotnet restore src
-dotnet build src
+dotnet restore src/aspnetcore.sln
+#dotnet build src
 
-rm -rf $(pwd)/out
+rm -rf $(pwd)/docker/out
 
-dotnet publish ./src/presentations/aspnetcore/aspnetcore.csproj -c Release -o $(pwd)/out
+dotnet publish ./src/presentations/aspnetcore/aspnetcore.csproj -c Release -o $(pwd)/docker/out
 
-cp ./docker/Dockerfile $(pwd)/out
+cp ./docker/Dockerfile $(pwd)/docker/out

@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  ci-build:
+    image: microsoft/aspnetcore-build:2.0
+    volumes:
+      - ..:/sln
+    working_dir: /sln
+    command: /bin/bash -c "dotnet restore ./src/aspnetcore.sln && dotnet publish ./src/presentations/aspnetcore/aspnetcore.csproj -c Release -o ../../../docker/out && cp ./docker/Dockerfile ./docker/out"
