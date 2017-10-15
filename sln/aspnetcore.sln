@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnetcore", "aspnetcore\aspnetcore.csproj", "{C1B14AAC-5897-4532-BC3C-14404FC4BCA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspnetcore", "src\presentations\aspnetcore\aspnetcore.csproj", "{C1B14AAC-5897-4532-BC3C-14404FC4BCA1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{43C4FA59-AD86-4629-970D-2BF2D707A12B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary1", "src\cores\ClassLibrary1\ClassLibrary1.csproj", "{43C4FA59-AD86-4629-970D-2BF2D707A12B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{72F1FC1E-280F-4B56-9BAC-CAF6B9924DA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "presentations", "presentations", "{5E42357F-B7AE-43AF-A7C1-9B5D5AAA7B9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cores", "cores", "{30722C12-7D53-4ACB-B63E-2C2E007514FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +30,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C1B14AAC-5897-4532-BC3C-14404FC4BCA1} = {5E42357F-B7AE-43AF-A7C1-9B5D5AAA7B9D}
+		{43C4FA59-AD86-4629-970D-2BF2D707A12B} = {30722C12-7D53-4ACB-B63E-2C2E007514FE}
+		{5E42357F-B7AE-43AF-A7C1-9B5D5AAA7B9D} = {72F1FC1E-280F-4B56-9BAC-CAF6B9924DA5}
+		{30722C12-7D53-4ACB-B63E-2C2E007514FE} = {72F1FC1E-280F-4B56-9BAC-CAF6B9924DA5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {844AB13B-CF9E-48AA-AC6C-FE910A4A90C3}
