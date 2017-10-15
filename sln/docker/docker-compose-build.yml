@@ -3,6 +3,6 @@ services:
   tradapp-build:
     image: microsoft/aspnetcore-build
     volumes:
-      - .:/sln
+      - ..:/sln
     working_dir: /sln
-    entrypoint: ["sh", "./build.sh"]
+    entrypoint: ["sh", "./docker/build.sh"]
