@@ -1,6 +1,6 @@
 #!bin/bash
 set -e
-dotnet restore src/aspnetcore.sln
+dotnet restore aspnetcore.sln
 #dotnet build src
 
 rm -rf $(pwd)/docker/out
